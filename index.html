@@ -39,17 +39,36 @@
       box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
     }
 
-    .title {
-      font-size: 32px;
-      text-align: center;
-      margin-top: 120px;
+    .logo {
+      display: block;
+      width: 200px;
+      height: auto;
+      margin: 100px auto;
+      filter: brightness(80%);
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      display: none;
     }
   </style>
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.body.style.backgroundImage = "linear-gradient(to bottom, rgba(0, 0, 0, 0.8), #202020), url('https://raw.githubusercontent.com/JeamDeveloper/Bedrock-Launcher/main/assets/imagen/vertical_background01.jpg')";
+      } else {
+        document.body.style.backgroundImage = "none";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
 </head>
 <body>
   <div class="toolbar">
-    <img src="https://raw.githubusercontent.com/JeamDeveloper/Bedrock-Launcher/main/assets/imagen/bedrock-icon.png" alt="Icono del Bedrock Launcher">
+    <img src="https://raw.githubusercontent.com/JeamDeveloper/Bedrock-Launcher/main/assets/imagen/launcher_old_icon.png" alt="Icono del Bedrock Launcher">
   </div>
-  <h1 class="title">Bedrock Launcher</h1>
+  <img class="logo" src="https://raw.githubusercontent.com/JeamDeveloper/Bedrock-Launcher/main/assets/imagen/launcher_old_icon.png" alt="Logo del Bedrock Launcher">
 </body>
 </html>
