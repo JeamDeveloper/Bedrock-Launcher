@@ -3,6 +3,8 @@
 <head>
   <title>Bedrock Launcher</title>
   <style>
+    @import url('https://github.com/JeamDeveloper/Bedrock-Launcher/raw/011b62b01740ca0f499f76c303caefc463c02c3a/fonts/minecraft-ten.ttf');
+
     body {
       margin: 0;
       padding: 0;
@@ -53,16 +55,5 @@
     <img src="https://raw.githubusercontent.com/JeamDeveloper/Bedrock-Launcher/main/assets/imagen/BLauncher%20(Bedrock-Launcher)%20Logo.png" alt="Bedrock Launcher Logo">
     <h1 style="font-family: 'Minecraft Ten', sans-serif; font-size: 36px; font-weight: normal;">¡Bienvenido al Bedrock Launcher!</h1>
   </div>
-
-  <script>
-    var fontUrl = 'https://github.com/JeamDeveloper/Bedrock-Launcher/blob/011b62b01740ca0f499f76c303caefc463c02c3a/fonts/minecraft-ten.ttf';
-    var fontName = 'Minecraft Ten';
-
-    var fontFace = new FontFace(fontName, 'url(' + fontUrl + ')');
-    fontFace.load().then(function (loadedFont) {
-      document.fonts.add(loadedFont);
-      document.body.style.fontFamily = fontName;
-    });
-  </script>
 </body>
 </html>
