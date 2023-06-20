@@ -13,10 +13,41 @@
       padding: 0;
       font-family: 'Minecraft Ten', sans-serif;
       text-align: center;
+      background-color: #202020;
+      color: #fff;
+    }
+
+    .toolbar {
+      background-color: #191919;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      z-index: 999;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .toolbar img {
+      vertical-align: middle;
+      width: 100px;
+      height: 100px;
+      margin: 8px 0 8px 16px;
+      border-radius: 10px;
+    }
+
+    .content {
+      margin-top: 96px;
     }
   </style>
 </head>
 <body>
-  <h1>MINECRAFT LAUNCHER</h1>
+  <div class="toolbar">
+    <img src="https://raw.githubusercontent.com/JeamDeveloper/Bedrock-Launcher/main/assets/imagen/launcher_old_icon.png" alt="Icono del Bedrock Launcher">
+  </div>
+  <div class="content">
+    <img src="https://raw.githubusercontent.com/JeamDeveloper/Bedrock-Launcher/main/assets/imagen/BLauncher%20(Bedrock-Launcher)%20Logo.png" alt="Bedrock Launcher Logo">
+  </div>
 </body>
 </html>
